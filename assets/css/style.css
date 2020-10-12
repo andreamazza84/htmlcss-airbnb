@@ -7,23 +7,18 @@
 }
 
 .container{
-  width: 80vw;
-  height: 100vh;
+  width: 800px;
   background-color: #222233;
   margin: auto;
-  position: relative;
+  text-align: center;
   padding: 50px;
 }
 
 .item{
+  display: inline-block;
   width: 500px;
   height: 350px;
-  background-image: url(../img/roma.jpg);
   background-size: cover;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   border: 10px solid white;
 }
 
@@ -33,11 +28,30 @@
   background-color: rgba(20,0,20,0.6)
 }
 
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 a h1{
   display: inline-block;
   position: absolute;
+  left: 50%;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-decoration: none;
+}
+
+div.roma{
+  background-image: url(../img/roma.jpg);
+}
+
+div.napoli{
+  background-image: url(../img/napoli.jpg);
+}
+
+div.milano{
+  background-image: url(../img/milano.jpg);
 }
