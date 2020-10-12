@@ -7,44 +7,21 @@
 }
 
 .container{
-  background-color: #222233;
-  margin: auto;
   text-align: center;
 }
 
 .item{
   display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  border: 10px solid white;
   width: calc(100vw - 20px);
   height: 100vh;
-  background-size: cover;
-  border: 10px solid white;
 }
 
 .item:nth-of-type(1n+2){
   border-top: 0;
-}
-
-.filter{
-  width: 100%;
-  height:100%;
-  background-color: rgba(20,0,20,0.6)
-}
-
-a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-a h1{
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  font-size: 60px;
+  height: calc(100vh - 10px);
 }
 
 .roma{
@@ -57,4 +34,28 @@ a h1{
 
 .milano{
   background-image: url(../img/milano.jpg);
+}
+
+.filter {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* filtro per oscurare lo sfondo, con accentuazione di rosso e blu */
+  background-color: rgba(20,0,20,0.6)
+}
+
+a h1{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 60px;
+  text-shadow: 5px 5px black;
+}
+
+a h1:hover{
+  text-shadow: 5px 5px #444;
 }
